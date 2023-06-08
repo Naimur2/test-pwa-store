@@ -19,20 +19,13 @@ export default function Cart() {
                     <h2 className="font-bold">
                         Total: {state.cart.reduce((a, b) => a + b.price, 0)}
                     </h2>
-                    <button
+                    <a
                         className="btn btn-primary"
-                        onClick={() =>
-                            route.push(
-                                {
-                                    pathname: "/checkout",
-                                },
-                                undefined,
-                                { shallow: true }
-                            )
-                        }
+                        href="/checkout"
+                        target="_blank"
                     >
                         Checkout
-                    </button>
+                    </a>
                 </div>
             ) : (
                 <div className="flex justify-center items-center h-full pt-10">
