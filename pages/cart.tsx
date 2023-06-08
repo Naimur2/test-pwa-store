@@ -19,11 +19,7 @@ export default function Cart() {
                     <h2 className="font-bold">
                         Total: {state.cart.reduce((a, b) => a + b.price, 0)}
                     </h2>
-                    <a
-                        className="btn btn-primary"
-                        href="/checkout"
-                        target="_blank"
-                    >
+                    <a className="btn btn-primary" href="/checkout">
                         Checkout
                     </a>
                 </div>
