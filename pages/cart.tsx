@@ -20,13 +20,14 @@ export default function Cart() {
                     <h2 className="font-bold">
                         Total: {state.cart.reduce((a, b) => a + b.price, 0)}
                     </h2>
-                    <button
+                    <a
                         className="btn btn-primary"
-                        // href="/checkout"
+                        href="ythola://payment"
                         id="checkout-button"
+                        target="_blank"
                     >
                         Checkout
-                    </button>
+                    </a>
                 </div>
             ) : (
                 <div className="flex justify-center items-center h-full pt-10">
